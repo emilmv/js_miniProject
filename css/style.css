@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.header-main {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgba(32, 36, 43, 0.23);
+}
+.address-text,.mail-text{
+    font-family: inherit;
+    font-size:13px;
+}
+.header-upper-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .contact-text{
+    position: absolute;
+    right: 10px;
+}
+.header-contact{
+    font-size: 10px;
+    position: relative;
+} */
+i{
+    padding: 13px;
+    padding-left: 30px;
+}
