@@ -10,29 +10,90 @@ body {
 }
 
 .header-main {
-    width: 1170px;
-    margin: 0 auto;
+    padding: 0 206px 0 206px;
     display: flex;
-    background-color: rgba(32, 36, 43, 0.23);
+    background-color: rgba(0, 0, 0, 0.151);
+    height: 96px;
 }
-.address-text,.mail-text{
-    font-family: inherit;
-    font-size:13px;
+
+.address-text,
+.mail-text {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 90;
+    opacity: 70%;
 }
-.header-upper-part{
+
+.header-upper-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.349);
 }
-/* .contact-text{
+
+.header-contact {
+    display: flex;
+}
+
+.header-contact a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.header-contact a:hover {
+    color: #878FD6;
+    transition: 0.3s;
+}
+
+.contact-text {
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.header-address,
+.header-email {
+    margin: 11px 0px 11px 40px;
+}
+
+i {
+    color: #FFFFFF;
+    padding-right: 10px;
+}
+
+.background-slider {
     position: absolute;
-    right: 10px;
+    z-index: -1;
+    top: -60px;
+    left: 0;
+    width: 100%;
 }
-.header-contact{
-    font-size: 10px;
-    position: relative;
-} */
-i{
-    padding: 13px;
-    padding-left: 30px;
+
+.background-slider img {
+    width: 100%;
+    height: 100svh;
+}
+
+.header-bottom-part {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-bottom-part ul {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+li>i {
+    opacity: 40%;
 }
