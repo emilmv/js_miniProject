@@ -22,7 +22,8 @@
 #nav-main {
     margin: 0;
     padding: 0;
-    background-color: rgba(32, 36, 43, 0.23);
+    background-color: rgba(32, 36, 43, 0.301);
+    
 }
 
 #contacts-header {
@@ -59,6 +60,10 @@
 
 #upper-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    margin: 0;
+    position: absolute;
+    bottom:20px;
+    right: 12px;
 }
 
 .background-img {
@@ -80,20 +85,34 @@
     padding: 0;
 }
 
-.button {
-    border: none;
-    color: #FFFFFF;
-}
+
 
 .button:hover {
     color: #FFFFFF;
+    border-bottom-color:#EF595A;
+    transition: 0.5s;
 }
 
 .btn.show {
     color: #FFFFFF;
 }
-.blog-btn{
-    background-color: transparent;
+.button{
     border: none;
-    color: #FFFFFF;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom: 3px solid transparent;
+}
+#lower-header{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    gap: 10px;
+}
+.contacts-button{
+}
+.custom-dropdown{
+    
 }
