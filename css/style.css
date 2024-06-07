@@ -3,7 +3,8 @@
 .btn-group .dropdown-toggle.show {
     color: #fff;
 }
-.btn{
+
+.btn {
     color: #FFFFFF;
 }
 
@@ -11,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat";
+    font-family: "Montserrat", serif;
 }
 
 #nav-logo {
@@ -20,10 +21,13 @@
 }
 
 #nav-main {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: rgba(32, 36, 43, 0.301);
-    
+
 }
 
 #contacts-header {
@@ -32,7 +36,7 @@
 
 .address-nav, .email-nav {
     color: #FFFFFF;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 500;
 }
@@ -62,48 +66,49 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.45);
     margin: 0;
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     right: 12px;
 }
 
-.background-img {
-    display: block;
-    margin-top: -96px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+/*.background-img {*/
+/*    display: block;*/
+/*    margin-top: -96px;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: -1;*/
+/*}*/
 
-.background-img img {
-    object-fit: cover;
-    width: 100%;
-    height: 729px;
+/*.background-img img {*/
+/*    object-fit: cover;*/
+/*    width: 100%;*/
+/*    height: 729px;*/
 
-}
+/*}*/
 
 #slider-main {
     padding: 0;
 }
 
 
-
 .button:hover {
     color: #FFFFFF;
-    border-bottom-color:#EF595A;
+    border-bottom-color: #EF595A;
     transition: 0.5s;
 }
 
 .btn.show {
     color: #FFFFFF;
 }
-.button{
+
+.button {
     border: none;
     font-size: smaller;
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 0;
     border-bottom: 3px solid transparent;
 }
-#lower-header{
+
+#lower-header {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -111,8 +116,108 @@
     right: 15px;
     gap: 10px;
 }
-.contacts-button{
+
+.email-nav a:hover, .email-nav a:focus {
+    color: #878fd6;
+    transition: 0.4s;
 }
-.custom-dropdown{
-    
+
+.slider-card-upper {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 100px;
+    z-index: 1;
+    border: 10px solid #FFFFFF;
+    border-bottom: none;
+}
+
+.slider-card-upper p {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.card-inner-header {
+    position: absolute;
+    top: 46.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-inner-header p {
+    width: 550px;
+    color: #FFFFFF;
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    font-size: 52px;
+    padding-top: 10px;
+}
+
+.card-inner-footer {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-inner-footer p {
+    color: #FFFFFF;
+    font-family: "Open Sans", serif;
+    font-weight: lighter;
+    font-size: 24px;
+    padding-top: 60px;
+    width: 300px;
+
+}
+
+.slider-card-bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 110px;
+    border: 10px solid #FFFFFF;
+    border-top: none;
+}
+
+.slider-card-bottom-price {
+    height: 250px;
+    background-color: #FFFFFF;
+    width: 240px;
+    font-family: "Montserrat", serif;
+    color: #37353D;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 13px;
+transform: translateY(1px);
+}
+
+.slider-card-bottom-frame {
+    height: 240px;
+}
+
+.triangle-bottomright {
+    position: absolute;
+    bottom: -7px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid red;
+    border-left: 12px solid transparent;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider-card-bottom-price span{
+    font-size: 16px;
+    transform: translateY(-3px);
+    padding-right:2px;
 }
