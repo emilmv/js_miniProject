@@ -36,7 +36,6 @@ $(document).ready(function () {
     });
 });
 
-const searchDropdowns = document.querySelectorAll('.search-dropdowns');
 const listItems = document.querySelectorAll('.search-list-items');
 listItems.forEach((item) => {
     item.addEventListener('click', (e) => {
@@ -123,3 +122,21 @@ diamondShapes.forEach(item => {
         item.firstChild.nextSibling.classList.remove('hover-animation')
     })
 });
+
+
+
+
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+});
+
