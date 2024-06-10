@@ -892,7 +892,6 @@ div[slider] > input[type=range]::-ms-fill-lower {
     font-size: 18px;
     padding-left: 20px;
 }
-
 .sub-button {
     position: absolute;
     right: 70px;
@@ -1077,5 +1076,75 @@ hr {
     color: #ef595a;
     cursor: pointer;
     transition: color 0.7s ease;
+}
+.contact-us-background{
+    background: url("../img/sliderContent3.jpg");
+    height: 230px;
+    overflow: hidden;
+    background-size: cover;
+    background-position-y: -150px;
+}
+.contact-us-main{
+    position: relative;
+    top: 60%;
+}
+.contact-us-main-text{
+    font-size: 30px;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+.contact-us-secondary-text{
+    color: #FFFFFF;
+    padding-right: 50px;
+    font-size: 14px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+.contact-us-desc-header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact-us-desc-inner-text{
+    padding-top: 30px;
+}
+.contact-us-desc-lists{
+    padding-top: 50px;
+    gap: 50px;
+}
+.contact-us-desc-lists ul li{
+    padding-top: 5px;
+    list-style: none;
+    font-size: 14px;
+    color: #EF595A;
+    font-weight: 500;
+}
+.contact-us-desc-logos{
+    padding-top: 20px;
+}
+.contact-us-desc-logos ul li{
+    list-style: none;
+    color: #878fd6;
+    font-size: 22px;
+}
+.contact-us-form-inputs{
+    padding-top: 30px;
+}
+.contact-us-form-header{
+    font-size: 22px;
+    font-weight: 650;
+}
+.contact-us-form{
+    padding-left: 40px;
+}
+.contact-us-form-inputs input{
+    height: 30px;
+}
 
+input[type=text],
+input[type=email]{
+    padding-left:5px
+}
+.contact-us-msg-input{
+    height: 150px !important;
 }
