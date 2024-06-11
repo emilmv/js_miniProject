@@ -140,3 +140,6 @@ diamondShapes.forEach(item => {
 },
 });
 
+document.querySelector('#contacts-button').addEventListener('click',function(){
+    location.href="./contact-us.html"
+})

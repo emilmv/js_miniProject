@@ -260,7 +260,10 @@ button i {
     width: 99%;
 }
 
-.btn-check:checked + .btn, .search-bar.show, .search-bar:first-child:active, :not(.btn-check) + .btn:active {
+.btn-check:checked+.btn,
+.search-bar.show,
+.search-bar:first-child:active,
+:not(.btn-check)+.btn:active {
     background-color: #4e4a59;
 }
 
@@ -313,7 +316,8 @@ button i {
     color: #FFFFFF;
 }
 
-#customRange1::-webkit-slider-thumb, #customRange2::-webkit-slider-thumb {
+#customRange1::-webkit-slider-thumb,
+#customRange2::-webkit-slider-thumb {
     background-color: #FFFFFF !important;
     height: 15px;
     position: relative;
@@ -334,14 +338,16 @@ button i {
 }
 
 
-#first-range-right-text, #second-range-right-text {
+#first-range-right-text,
+#second-range-right-text {
     position: relative;
     top: 9px;
     right: 10px;
     font-size: 14px
 }
 
-#first-range-left-text, #second-range-left-text {
+#first-range-left-text,
+#second-range-left-text {
     position: relative;
     top: 9px;
     font-size: 14px
@@ -369,14 +375,14 @@ button i {
     width: 370px;
 }
 
-[slider] > div {
+[slider]>div {
     position: absolute;
     left: 13px;
     right: 15px;
     height: 14px;
 }
 
-[slider] > div > [inverse-left] {
+[slider]>div>[inverse-left] {
     position: absolute;
     left: 0;
     height: 3px;
@@ -385,7 +391,7 @@ button i {
     margin: 0 7px;
 }
 
-[slider] > div > [inverse-right] {
+[slider]>div>[inverse-right] {
     position: absolute;
     right: 0;
     height: 3px;
@@ -394,7 +400,7 @@ button i {
     margin: 0 7px;
 }
 
-[slider] > div > [range] {
+[slider]>div>[range] {
     position: absolute;
     left: 0;
     height: 3px;
@@ -402,7 +408,7 @@ button i {
     background-color: #878fd6;
 }
 
-[slider] > div > [thumb] {
+[slider]>div>[thumb] {
     position: absolute;
     top: -5px;
     z-index: 2;
@@ -416,7 +422,7 @@ button i {
     outline: none;
 }
 
-[slider] > input[type=range] {
+[slider]>input[type=range] {
     position: absolute;
     pointer-events: none;
     -webkit-appearance: none;
@@ -432,7 +438,7 @@ button i {
 }
 
 
-div[slider] > input[type=range]::-webkit-slider-thumb {
+div[slider]>input[type=range]::-webkit-slider-thumb {
     pointer-events: all;
     width: 28px;
     height: 28px;
@@ -442,7 +448,7 @@ div[slider] > input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-div[slider] > input[type=range]::-ms-fill-lower {
+div[slider]>input[type=range]::-ms-fill-lower {
     background: transparent;
     border: 0 none;
 }
@@ -892,6 +898,7 @@ div[slider] > input[type=range]::-ms-fill-lower {
     font-size: 18px;
     padding-left: 20px;
 }
+
 .sub-button {
     position: absolute;
     right: 70px;
@@ -1072,79 +1079,121 @@ hr {
     right: -10px;
     transition: color 0.7s ease;
 }
-.initial-footer-list ul li:hover{
+
+.initial-footer-list ul li:hover {
     color: #ef595a;
     cursor: pointer;
     transition: color 0.7s ease;
 }
-.contact-us-background{
+
+.contact-us-background {
     background: url("../img/sliderContent3.jpg");
     height: 230px;
     overflow: hidden;
     background-size: cover;
     background-position-y: -150px;
 }
-.contact-us-main{
+
+.contact-us-main {
     position: relative;
     top: 60%;
 }
-.contact-us-main-text{
+
+.contact-us-main-text {
     font-size: 30px;
     font-weight: 600;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
 }
-.contact-us-secondary-text{
+
+.contact-us-secondary-text {
     color: #FFFFFF;
     padding-right: 50px;
     font-size: 14px;
     padding-top: 20px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
 }
-.contact-us-desc-header{
+
+.contact-us-desc-header {
     font-size: 30px;
     font-weight: 600;
 }
-.contact-us-desc-inner-text{
+
+.contact-us-desc-inner-text {
     padding-top: 30px;
 }
-.contact-us-desc-lists{
+
+.contact-us-desc-lists {
     padding-top: 50px;
     gap: 50px;
 }
-.contact-us-desc-lists ul li{
+
+.contact-us-desc-lists ul li {
     padding-top: 5px;
     list-style: none;
     font-size: 14px;
     color: #EF595A;
     font-weight: 500;
 }
-.contact-us-desc-logos{
+
+.contact-us-desc-logos {
     padding-top: 20px;
 }
-.contact-us-desc-logos ul li{
+
+.contact-us-desc-logos ul li {
     list-style: none;
     color: #878fd6;
     font-size: 22px;
 }
-.contact-us-form-inputs{
+
+.contact-us-form-inputs {
     padding-top: 30px;
 }
-.contact-us-form-header{
+
+.contact-us-form-header {
     font-size: 22px;
     font-weight: 650;
 }
-.contact-us-form{
+
+.contact-us-form {
     padding-left: 40px;
 }
-.contact-us-form-inputs input{
-    height: 30px;
+
+.contact-us-form-inputs input,
+.text-area-input{
+    height: 35px;
+    border: none;
+    color: #999ca9;
 }
 
 input[type=text],
-input[type=email]{
-    padding-left:5px
+input[type=email],
+.text-area-input::placeholder {
+    padding-left: 5px;
 }
-.contact-us-msg-input{
+
+.contact-us-msg-input {
     height: 150px !important;
+}
+
+.contact-us-form-inputs input:focus,
+.text-area-input:focus {
+    border: 1px solid #a9afe3;
+    color: #999ca9;
+    outline-offset: 0px;
+    outline: none;
+}
+.text-area-input{
+    height: 120px !important;
+    resize: none;
+}
+.contacts-send-button{
+    height: 49px !important;
+    width: 176px !important; 
+    border-radius: 3px !important;
+    background-color: #EF595A;
+}
+.contacts-send-button:hover{
+    background-color: #878fd6;
+    color: #FFFFFF;
 }
